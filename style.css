@@ -2,6 +2,11 @@ body {
     background-color: #f8f8f8;
 }
 
+.logo {
+    height: 100px;
+    border-radius: 10%;
+}
+
 #menu li {
     font-size: 20px;
     font-style: italic;
@@ -11,6 +16,11 @@ body {
 
 #menu li a {
     color: darkred;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    color: chocolate;
 }
 
 .item {
@@ -46,12 +56,52 @@ input[type="text"], input[type="email"], textarea {
     color: sandybrown;
     font-size: 14px;
     font-style: italic;
+    text-transform: capitalize;
 }
 
 input[type="text"], input[type="email"] {
     height: 20px;
 }
 
+input[type="email"]:focus {
+    color: cornsilk;
+    background-color: blueviolet;
+}
+
 a > img {
-    border: 3px orange solid;
+    outline: 3px orange solid;
+}
+
+a > img:hover {
+    outline: none;
+}
+
+.specs {
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    width: 100%;
+}
+
+.specs td {
+    border: solid cadetblue 1px;
+    background-color: lightcyan;
+    color: cadetblue;
+    font-family: "Tahoma", sans-serif;
+}
+
+.specs tr {
+    height: 30px;
+    text-align: center;
+}
+
+.specs tr:first-child {
+    height: 60px;
+}
+
+.shortdesc:first-letter,
+.detail:first-letter {
+    font-size: 2em;
+    font-family: cursive;
 }

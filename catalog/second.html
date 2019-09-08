@@ -8,11 +8,22 @@
 </head>
 
 <body>
-    <ul id="menu">
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="../catalog.html">Каталог</a></li>
-        <li><a href="../contacts.html">Контакты</a></li>
-    </ul>
+    <div class="header">
+        <table>
+            <tr>
+                <td>
+                    <img class="logo" src="../img/logo.png">
+                </td>
+                <td>
+                    <ul id="menu">
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="../catalog.html">Каталог</a></li>
+                        <li><a href="../contacts.html">Контакты</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
     <hr>
     <h1>Нужный бидон</h1>
     <h3 class="item">Описание товара</h3>
@@ -26,12 +37,52 @@
     </ul>
     <h3 class="item">Подробное описание товара</h3>
     <p class="detail">Является мечтой любого хозяина, поэтому почти нематериален. Вмещает любые жидкости в&nbsp;любых количествах без гарантии производителя. Всегда можно сдать как вторсырье. </p>
+    <h3 class="item">Технические характеристики товара</h3>
+    <table class="specs">
+        <tr>
+            <td rowspan="2" colspan="2">Исполнение</td>
+            <td colspan="3">Вероятность содержания</td>
+        </tr>
+        <tr>
+            <td>алюминия, %</td>
+            <td>титана, %</td>
+            <td>железа, %</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Стандарт</td>
+            <td>мин.</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>макс.</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Премиум</td>
+            <td>мин.</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>макс.</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
     <hr>
     <h3>Смотрите также у нас</h3>
     <a href="first.html">Отличный черпак</a>
     <br> <a href="third.html">Полезная метла</a>
     <hr>
+    <div class="footer">
     <p>Все права защищены &copy;&nbsp;2019</p>
+    </div>
 </body>
 
 </html>
