@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <ul>
+    <ul id="menu">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="contacts.html">Контакты</a></li>
@@ -15,18 +16,17 @@
     <hr>
     <form action="#">
         <fieldset>
-            <legend>Обратная связь</legend> Ваше имя
-            <input type="text" size="28" placeholder="Имя">
-            <br> Ваш E-mail
-            <input type="text" size="27" placeholder="E-mail">
-            <br> Тема
-            <input type="text" size="33" placeholder="Тема">
-            <br> Ваш вопрос
-            <br>
+            <legend>Обратная связь</legend> Ваше имя <br>
+            <input type="text" placeholder="Имя">
+            <br> Ваш E-mail <br>
+            <input type="email" placeholder="E-mail">
+            <br> Тема <br>
+            <input type="text" placeholder="Тема">
+            <br> Ваш вопрос <br>
             <textarea name="question_text" id="" cols="40" rows="10" placeholder="Вопрос"></textarea>
             <br>
             <input type="submit" value="Отправить запрос">
-            <input type="reset" value="Отмена"> </fieldset>
+            <input type="reset" value="Очистить"> </fieldset>
     </form>
     <h1>Адрес</h1>
     <p id="phone">Наш телефон: +7 (499) 123-45-67</p>
@@ -34,7 +34,7 @@
     <p id="e-mail">Наш E-mail: info@samsebemaster.ru</p>
     <iframe src="https://yandex.ru/map-widget/v1/-/CGG6EWmC" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
     <hr>
-    <p>Все права защищены &copy; 2019</p>
+    <p>Все права защищены &copy;&nbsp;2019</p>
 </body>
 
 </html>
