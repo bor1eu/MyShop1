@@ -8,79 +8,84 @@
 </head>
 
 <body>
-    <div class="header">
-        <table>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img src="../img/logo.png"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../catalog.html">Каталог</a></li>
+                    <li><a href="../contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h1>Полезная метла</h1>
+        <div class="buy">
+            <a href="#">Добавить в корзину</a>
+        </div>
+        <h3 class="item">Описание товара</h3>
+        <div class="pic">
+            <a href="../img/metla.jpg" target="_blank"><img src="../img/metla.jpg" alt="Метла"></a>
+        </div>
+        <div class="shortdesc">
+            <p>Стильный инструмент поддержания домашнего уюта и&nbsp;иногда даже очага!</p>
+        </div>
+        <h3 class="item">Характеристики товара</h3>
+        <ul class="chars">
+            <li>Наглядное доказательство крепкого хозяйства.</li>
+            <li>Изготовлено без вреда для экологии и&nbsp;всяким домашним и&nbsp;не&nbsp;очень животным.</li>
+        </ul>
+        <h3 class="item">Подробное описание товара</h3>
+        <p class="detail">Выполнено из&nbsp;самого натурального материала самыми натуральными мастерами метельного дела. Изысканный дизайн разработан известным метелье Василье. За&nbsp;дополнительную плату&nbsp;&mdash; бонусные транспортные функции.</p>
+        <h3 class="item">Технические характеристики товара</h3>
+        <table class="specs">
             <tr>
-                <td>
-                    <img class="logo" src="../img/logo.png">
-                </td>
-                <td>
-                    <ul id="menu">
-                        <li><a href="../index.html">Главная</a></li>
-                        <li><a href="../catalog.html">Каталог</a></li>
-                        <li><a href="../contacts.html">Контакты</a></li>
-                    </ul>
-                </td>
+                <td rowspan="2" colspan="2">Исполнение</td>
+                <td colspan="3">Вероятность содержания</td>
+            </tr>
+            <tr>
+                <td>сена, %</td>
+                <td>соломы, %</td>
+                <td>бамбука, %</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Стандарт</td>
+                <td>мин.</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>макс.</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Премиум</td>
+                <td>мин.</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>макс.</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
             </tr>
         </table>
-    </div>
-    <hr>
-    <h1>Полезная метла</h1>
-    <h3 class="item">Описание товара</h3>
-    <a href="../img/metla.jpg" target="_blank"><img src="../img/metla.jpg" alt="Метла"></a>
-    <p class="shortdesc">Стильный инструмент поддержания домашнего уюта и&nbsp;иногда даже очага!</p>
-    <h3 class="item">Характеристики товара</h3>
-    <ul class="chars">
-        <li>Наглядное доказательство крепкого хозяйства.</li>
-        <li>Изготовлено без вреда для экологии и&nbsp;всяким домашним и&nbsp;не&nbsp;очень животным.</li>
-    </ul>
-    <h3 class="item">Подробное описание товара</h3>
-    <p class="detail">Выполнено из&nbsp;самого натурального материала самыми натуральными мастерами метельного дела. Изысканный дизайн разработан известным метелье Василье. За&nbsp;дополнительную плату&nbsp;&mdash; бонусные транспортные функции.</p>
-    <h3 class="item">Технические характеристики товара</h3>
-    <table class="specs">
-        <tr>
-            <td rowspan="2" colspan="2">Исполнение</td>
-            <td colspan="3">Вероятность содержания</td>
-        </tr>
-        <tr>
-            <td>сена, %</td>
-            <td>соломы, %</td>
-            <td>бамбука, %</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Стандарт</td>
-            <td>мин.</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>макс.</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Премиум</td>
-            <td>мин.</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>макс.</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-    </table>
-    <hr>
-    <h3>Смотрите также у нас</h3>
-    <a href="first.html">Отличный черпак</a>
-    <br> <a href="second.html">Нужный бидон</a>
-    <hr>
-    <div class="footer">
-    <p>Все права защищены &copy;&nbsp;2019</p>
+        <hr>
+        <h2 class="whatsnext">Смотрите также у нас</h2>
+        <div class="shortcuts">
+            <a href="first.html">Отличный черпак</a>
+            <br> <a href="second.html">Нужный бидон</a>
+        </div>
+        <hr>
+        <div class="footer">
+            <p>Все права защищены &copy;&nbsp;2019</p>
+        </div>
     </div>
 </body>
 

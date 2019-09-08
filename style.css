@@ -2,32 +2,160 @@ body {
     background-color: #f8f8f8;
 }
 
+.container {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #eda;
+}
+
+.header {
+    height: 140px;
+    background-image: url("img/tile1.png");
+    background-size: 20px;
+}
+
 .logo {
+    width: 15%;
+    display: inline;
+}
+
+.logo > img {
     height: 100px;
     border-radius: 10%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
-#menu li {
-    font-size: 20px;
-    font-style: italic;
-    font-family: Arial, sans-serif;
+.menu {
+    width: 660px;
+    float: right;
+    height: inherit;
+    text-align: center;
+}
+
+.menu ul {
+    padding: 20px 0px;
+}
+
+.menu li {
     list-style-type: none;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    border: 2px solid #eda;
+    background-color: aquamarine;
 }
 
-#menu li a {
-    color: darkred;
+.menu li a {
+    color: rgb(34, 177, 76);
+    font-size: 30px;
+    font-family: fantasy, sans-serif;
     text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 12px 0px;
 }
 
-#menu li a:hover {
-    color: chocolate;
+.menu li a:hover {
+    color: rgb(255, 127, 39);
+    background-color: rgb(34, 177, 76);
+}
+
+.footer {
+    height: 50px;
+    text-align: right;
+    background-color: #bda;
+}
+
+.footer p {
+    margin: 0;
+    padding: 15px 15px 0 0;
+}
+
+h1,
+.whatsnext {
+    color: mediumpurple;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+p,
+a,
+fieldset {
+    color: darkred;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+p {
+    padding: 10px 15px;
+}
+
+.noshow {
+    display: none;
+}
+.product {
+    display: inline-block;
+    margin: 12px;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 2px 0px #ccc;
+    width: 30%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product a {
+    display: block;
+    padding: 20px;
+}
+
+.buy {
+    /*margin-bottom: 10px;
+    margin-right: 50px;*/
+    position: absolute;
+    top: 170px;
+    right: 20px;
+    border: 2px solid darkviolet;
+    background-color: violet;
+    font-size: 24px;
+    font-family: fantasy, sans-serif;
+}
+
+.buy:hover {
+    background-color: orange;
+}
+
+.buy:active {
+    background-color: orangered;
+}
+
+.buy a {
+    display: block;
+    font-size: 20px;
+    font-family: fantasy, sans-serif;
+    color: darkviolet;
+    text-decoration: none;
+    margin: 10px 25px;
+}
+
+.pic {
+    float: left;
+    margin: 18px;
 }
 
 .item {
-    color: black;
+    padding: 10px;
+    color: forestgreen;
+    background-color: aquamarine;
+    font-family: "Arial Narrow", sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    background-color: #eaeaea;
+    font-weight: 800;
+    /*background-color: #eaeaea;*/
+    clear: both;
 }
 
 .shortdesc {
@@ -48,15 +176,27 @@ body {
 .chars li {
     color: green;
     font-size: 15px;
-    list-style: url(img/finger.png);
+    font-family: Tahoma, sans-serif;
+    list-style: url("img/finger.svg");
+}
+
+.whatsnext {
+    font-size: 24px;
+}
+
+.shortcuts {
+    margin: 20px 40px;
 }
 
 input[type="text"], input[type="email"], textarea {
     width: 300px;
-    color: sandybrown;
+    color: rgb(34, 177, 76);
+    background-color: aquamarine;
     font-size: 14px;
     font-style: italic;
     text-transform: capitalize;
+    padding: 1px;
+    border: 1px solid transparent;
 }
 
 input[type="text"], input[type="email"] {
@@ -64,12 +204,13 @@ input[type="text"], input[type="email"] {
 }
 
 input[type="email"]:focus {
-    color: cornsilk;
-    background-color: blueviolet;
+    color: rgb(255, 127, 39);
+    background-color: rgb(34, 177, 76);
 }
 
 a > img {
-    outline: 3px orange solid;
+    outline: 2px orange solid;
+    height: 150px;
 }
 
 a > img:hover {
@@ -104,4 +245,15 @@ a > img:hover {
 .detail:first-letter {
     font-size: 2em;
     font-family: cursive;
+}
+
+fieldset {
+    width: 90px;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: 374px;
+    border: none;    
 }
